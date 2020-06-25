@@ -1,5 +1,5 @@
 module.exports = {
-    mongoURI: process.env.REACT_MONGO_URI,
+    mongoURI: process.env.REACT_APP_MONGO_URI,
     secretOrKey: "secret"
   };
   
