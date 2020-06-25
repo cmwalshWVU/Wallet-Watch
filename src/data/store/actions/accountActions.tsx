@@ -164,7 +164,7 @@ export const getTransactions = (plaidData: any) => (dispatch: any) => {
   console.log("TEST1")
     dispatch(setTransactionsLoading());
     axios
-      .post("/api/plaid/accounts/transactions", plaidData)
+      .post("https://wallet-watch-server.herokuapp.com/api/plaid/accounts/transactions", plaidData)
       .then(res =>
         dispatch({
           type: GET_TRANSACTIONS,
@@ -192,7 +192,7 @@ export const getBalances = (plaidData: any) => (dispatch: any) => {
   console.log("TEST1")
   dispatch(setBalancesLoading());
     axios
-      .post("/api/plaid/accounts/balances", plaidData)
+      .post("https://wallet-watch-server.herokuapp.com/api/plaid/accounts/balances", plaidData)
       .then(res => {
         console.log("success")
         dispatch({
@@ -220,7 +220,7 @@ export const getBalances = (plaidData: any) => (dispatch: any) => {
 export const createAssetReport = (plaidData: any) => (dispatch: any) => {
   console.log("Asset Test")
     axios
-      .post("/api/plaid/assets", plaidData)
+      .post("https://wallet-watch-server.herokuapp.com/api/plaid/assets", plaidData)
       .then(res => {
         console.log("assets")
         console.log(res.data)
@@ -244,7 +244,7 @@ export const createAssetReport = (plaidData: any) => (dispatch: any) => {
   export const getAssetReport = (plaidData: any, token: string) => (dispatch: any) => {
     console.log(token)
       axios
-        .post(`/api/plaid/getAssets/${token}`, plaidData)
+        .post(`https://wallet-watch-server.herokuapp.com/api/plaid/getAssets/${token}`, plaidData)
         .then(res => {
           console.log("Got Assets")
           console.log(res.data)

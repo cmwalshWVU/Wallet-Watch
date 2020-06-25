@@ -73,10 +73,10 @@ const AccountsPage: React.FC<AccountsPageProps> = ({ history }) => {
       }
     }, [firebaseUser]);
     
-    const loadBalances = () => {
+    const loadTransactions = () => {
       // dispatch(setTransactionsLoading());
         axios
-        .post("/api/plaid/accounts/transactions", accounts)
+        .post("https://wallet-watch-server.herokuapp.com/api/plaid/accounts/transactions", accounts)
         .then(res =>
             dispatch({
                 type: GET_TRANSACTIONS,
@@ -88,9 +88,9 @@ const AccountsPage: React.FC<AccountsPageProps> = ({ history }) => {
         );
     }
 
-    const loadTransactions = () => {
+    const loadBalances = () => {
       axios
-      .post("/api/plaid/accounts/balances", accounts)
+      .post("https://wallet-watch-server.herokuapp.com/api/plaid/accounts/balances", accounts)
       .then(res => {
           dispatch({
               type: GET_BALANCES,
@@ -110,10 +110,11 @@ const AccountsPage: React.FC<AccountsPageProps> = ({ history }) => {
     useEffect(() => {
         // Update the document title using the browser API
         dispatch(setTransactionsLoading());
-        loadBalances()
+        loadTransactions()
 
         dispatch(setBalancesLoading());
-        loadTransactions()
+        loadBalances()
+
 
     }, [accounts.length]);
 
