@@ -1,0 +1,319 @@
+#accounts-page {
+    font-size: 26px;
+
+    .row {
+        .officialName {
+            span {
+                font-size: 12px !important;
+            }
+        }
+    }
+    .plaid-buttons {
+        background: transparent !important;
+        border: none !important
+    }
+
+    .accounts-title {
+        padding-left: 12px;
+        font-size: 14px !important;
+        color: #757575 !important;
+    }
+
+    .about-info {
+        font-size: 26px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    .flex {
+        align-items: center;
+        display: flex;
+    }
+
+    .accounts-title {
+        padding: 0px 0 0 20px;
+        font-size: 12px;
+    }
+
+    .first {
+        margin-top: 0px !important;
+    }
+
+    .delete-account {
+        cursor: pointer;
+        color: white !important;
+        border-radius: 50%;
+        background-color: rgb(229, 0, 0);
+        padding: 2px;
+        margin-right: 10px;
+    }
+
+    .refresh-icon {
+        cursor: pointer;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-right: 24px
+    }
+
+    .transactions {
+        width: 93%;
+        margin: auto
+    }
+    .table {
+
+        .transactions-totals, .balances-totals {
+            padding-left: 12px;
+            font-size: 14px;
+            color: #757575 !important;
+        }
+    }
+
+    .cardHeader {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.25rem !important;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif  !important;
+        font-weight: 500  !important;
+        line-height: 1.6  !important;
+        letter-spacing: 0.0075em  !important;
+        padding-left: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: black !important;
+
+    }
+
+    .totals {
+        color: black !important;
+
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    .balancesCard {
+        min-height: 300px;
+    }
+
+
+    .balance {
+        font-size: 14px;
+        display: flex;
+        text-align: left;
+        color: black !important;
+    }
+
+    .totals {
+        padding: 12px;
+        margin-right: 12px
+    }
+
+    .amount {
+        padding-left: 10px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .accounts {
+        padding-left: 8px !important;
+        padding-bottom: 12px;
+        margin-bottom: 0px !important
+    }
+
+    .title {
+        align-self: center;
+        font-weight: 550;
+        width: fit-content;
+        font-size: 13px;
+        align-self: flex-end;
+    }
+
+}
+
+.collapsableRow {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1;
+}
+
+.collapsedTable {
+    width: 95%;
+    margin: auto !important;
+}
+
+.notLastRow {
+    border-bottom: 1px solid #D8D8D8 !important;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25rem !important;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif  !important;
+    font-weight: 500  !important;
+    line-height: 1.6  !important;
+    letter-spacing: 0.0075em  !important;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black !important;
+
+}
+
+.totals {
+    color: black !important;
+
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.balancesCard {
+    min-height: 300px;
+}
+
+.selected {
+    background-color: #D7E7F5 !important;
+}
+
+.acccount-name-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.collapseIcon {
+    padding-right: 6px;
+}
+
+.collapsedRow {
+    margin: auto !important;
+    padding-bottom: 22px;
+    cursor: default;
+}
+
+.collapsablerow {
+    font-size: 1.1rem !important;
+    cursor: pointer;
+}
+
+.MuiIconButton-root:focus {
+    background-color: transparent;
+}
+
+.List {
+    margin: auto !important;
+    min-width: 100% !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    min-height: 25px;
+    margin: 0 !important;
+    padding-left: 16px;
+}
+
+.primary {
+    background-color: #A2C7E8 !important;
+}
+.top {
+    border-top: 0px
+}
+
+.officialName {
+    text-align: left;
+    width: 50%;
+}
+.currentBalance, .availableBalance, .limit {
+    width: 22%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 6px;
+}
+
+.currentBalance, .availableBalance, .limit {
+    text-align: left;
+}
+
+.cell {
+    font-family: 'Eczar' !important;
+    padding-right: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name {
+    font-family: 'Roboto Condensed' !important;
+}
+
+.leadHeader {
+    text-align: center;
+}
+
+.MuiListItemText-root {
+    flex: none !important;
+}
+
+.balance {
+    font-size: 14px;
+    display: flex;
+    text-align: left;
+    color: black !important;
+}
+
+.totals {
+    padding: 12px;
+    margin-right: 12px
+}
+
+.amount {
+    padding-left: 10px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.accounts {
+    padding-left: 8px !important;
+    padding-bottom: 12px;
+    margin-bottom: 0px !important
+}
+
+.table {
+    margin-bottom: 80px
+}
+
+button:focus {
+    background-color: transparent;
+}
+
+.MuiTableSortLabel-root, .MuiTableCell-head {
+    font-size: 16px !important;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.MuiTableCell-body, .MuiListItemText-primary {
+    font-size: 16px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.leadHeader {
+    padding-left: 7% !important;
+}
+
+.MuiTabs-flexContainer {
+    border-bottom: .5px solid rgba(0, 0, 0, .2) !important;
+}

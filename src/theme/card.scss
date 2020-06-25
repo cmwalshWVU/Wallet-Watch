@@ -1,0 +1,291 @@
+.chart {
+    margin-bottom: 0;
+}
+
+.auth-card {
+    max-width: 33%;
+    min-width: 275px;
+}
+.rounded-card {
+    border-radius: 10px;
+    box-shadow: 0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A !important;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.dashboard-section {
+     padding-top: 0 !important;
+     padding-bottom: .25rem !important;
+}
+
+.App-title {
+    font-weight: 500
+}
+
+.buyOrSell label input[type=checkbox]:checked+.lever {
+    background-color: green;
+}
+
+.buyOrSell label .lever {
+    background-color: red;
+}
+
+.buyOrSellLabel {
+    font-size: 12px;
+}
+
+.card-title {
+    font-weight: 500 !important;
+    margin-bottom: 5px !important;
+    font-size: 18px !important
+}
+
+.thumbnail {
+    float: right;
+    border-radius: 6px;
+    display: flex;
+    max-height: 90px;
+    padding-left: 20px;
+    max-width: 20%;
+    justify-content: center;
+}
+
+.articleDate {
+    font-weight: 350
+}
+
+.auth-tabs {
+    margin-bottom: 34px;
+    border-bottom: 1px solid grey;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px !important
+}
+
+.ticker-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px 16px 0 16px !important
+}
+
+.collapse-articles {
+    min-width: 32px !important;
+}
+
+.coinbase-button {
+    background-color: #536DFE !important;
+    color: white !important;
+}
+.coinbase-button:active{
+    background-color: #536DFE !important;
+}
+
+.coinbase-button:focus{
+    background-color:#536DFE !important;
+}
+
+.transaction-form .MuiPaper-root {
+    min-width: 33%;
+    border-radius: 10px !important
+}
+
+.article-list-title {
+    cursor: pointer;
+    width: fit-content;
+}
+
+.forgot-password {
+    font-size: 11px;
+    height: 22px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #ec407a;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    padding: 5px;
+}
+
+.forgot-password:hover {
+    background-color: transparent
+}
+
+.forgot-password-disclaimer {
+    font-size: 11px;
+}
+
+.noData {
+    min-height: 60px;
+}
+.defaultMessage {
+    font-size: 22px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.addHoldings {
+    min-height: 40px;
+    font-size: 16px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.addHoldingsButton {
+    vertical-align: middle;
+    color: #536DFE !important;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.holdingsFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.lastUpdated {
+    text-align: center;
+    margin-left: auto;
+}
+
+.auth-tab .MuiTab-wrapper {
+    font-weight: 700;
+    font-weight: 700
+}
+
+.auth-tab-icon .MuiTab-wrapper {
+    font-size: 16px;
+    font-weight: 700
+}
+
+.articleTitle {
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.articleFlex {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.readMore {
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.article-card {
+    height: 100%;
+    border: 1px solid #92B9FF;
+}
+
+.article-col {
+    padding-bottom: 15px;
+}
+
+.article-grid {
+    width: 95%
+}
+
+.article-body {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.ticker-row {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 11px;
+    width: fit-content;
+    margin: auto;
+}
+
+.ticker-row-value {
+    width: fit-content;
+    margin: auto;
+    font-weight: 600;
+    color: #3F454D
+}
+
+.chart-content {
+    padding: 0px !important;
+}
+
+.ticker-grid {
+    width: 95%;
+}
+
+.chart {
+    width: 100%;
+}
+
+.ticker {
+    height: 100%;
+    border: 1px solid grey;
+}
+
+.last-updated-time {
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    padding-right: 20px;
+}
+
+.ticker-collapse {
+    margin-right: 0;
+    margin-left: auto
+}
+
+.balanceChart, .transactionChart {
+    .chart {
+        // width: 100%
+    }
+}
+
+.apexcharts-canvas {
+    width: 98% !important;
+    svg {
+        width: 100% !important;
+    }
+}
+
+.ticker-name {
+    display: flex;
+    font-size: 150%;
+
+    .trading-pair {
+        padding-left: 8px;
+        font-size: 12px;
+        color: grey;
+        padding-top: 12px;
+
+        .collapse-chart {
+            padding: 0;
+            height: fit-content;
+            width: fit-content;
+            color: grey;
+
+            .MuiButton-label {
+                height: fit-content;
+                width: fit-content;
+            }
+        }
+    }
+}
