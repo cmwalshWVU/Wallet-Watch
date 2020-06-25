@@ -23,7 +23,7 @@ class ArticleList extends Component {
 	}
 
     componentDidMount() {
-        const pusher = new Pusher(process.envREACT_PUSHER_ID, {
+        const pusher = new Pusher(process.env.REACT_PUSHER_ID, {
             cluster: 'us2',
             encrypted: true
             });
