@@ -49,8 +49,7 @@
     "react-spinners": "^0.8.0",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "victory": "^34.1.1",
-    "write-file-atomic": "^3.0.3"
+    "victory": "^34.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
