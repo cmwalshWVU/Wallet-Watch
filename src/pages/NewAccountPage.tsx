@@ -181,8 +181,8 @@ const AccountsPage: React.FC<AccountsPageProps> = ({ history }) => {
     `;
   
     let accountItems = accounts ? accounts.map((account:any, index: number) => (
-        <IonItem className={index === 0 ? "first" : ""} key={account._id} style={{ marginTop: "1rem" }}>
-            <IonIcon className={"delete-account"} onClick={() => onDeleteClick(account._id)} icon={trash} />
+        <IonItem className={index === 0 ? "first" : ""} key={account.itemId} style={{ marginTop: "1rem" }}>
+            <IonIcon className={"delete-account"} onClick={() => onDeleteClick(account.itemId)} icon={trash} />
             <IonLabel>{account.institutionName}</IonLabel>
         </IonItem>
     )) : [];
