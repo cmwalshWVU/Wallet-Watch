@@ -84,21 +84,32 @@ export const dispatchAddAccount = (accounts: any, data: any) => (dispatch: any) 
 
   // Delete account
 export const deleteAccount = (plaidData: any) => (dispatch: any) => {
-    if (window.confirm("Are you sure you want to remove this account?")) {
-      const id = plaidData.id;
-      const newAccounts = plaidData.accounts.filter(
-        (account: any) => account._id !== id
-      );
-      axios.delete(`/api/plaid/accounts/${id}`)
-        .then(res =>
-          dispatch({
-            type: DELETE_ACCOUNT,
-            payload: id
-          })
-        )
-        .then(newAccounts ? dispatch(getTransactions(newAccounts)) : null)
-        .catch(err => console.log(err));
-    }
+  const user = auth.currentUser
+  if (window.confirm("Are you sure you want to remove this account?")) {
+    const id = plaidData.id;
+    const newAccounts = plaidData.accounts.filter(
+      (account: any) => account._id !== id
+    );
+    firestore.collection('plaidAccounts').doc(user!.uid).collection("accounts").doc(id).delete().then(function() {
+      console.error("Success removing document: ");
+      dispatch({
+        type: DELETE_ACCOUNT,
+        payload: id
+      })
+    }).then(newAccounts ? dispatch(getTransactions(newAccounts)) : null)
+    .catch(function(error) {
+        console.error("Error removing document: ", error);
+    });
+    // axios.delete(`/api/plaid/accounts/${id}`)
+    //   .then(res =>
+    //     dispatch({
+    //       type: DELETE_ACCOUNT,
+    //       payload: id
+    //     })
+    //   )
+    //   .then(newAccounts ? dispatch(getTransactions(newAccounts)) : null)
+    //   .catch(err => console.log(err));
+  }
 };
 
   // Get all accounts for specific user

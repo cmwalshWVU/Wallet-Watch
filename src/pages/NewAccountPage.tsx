@@ -149,7 +149,7 @@ const AccountsPage: React.FC<AccountsPageProps> = ({ history }) => {
         id: id,
         accounts: accounts
         };
-        deleteAccount(accountData);
+        dispatch(deleteAccount(accountData));
     };
 
     const setSecondChart = (index: number) => {
