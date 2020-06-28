@@ -19,7 +19,7 @@ import { firestore, auth } from "../firebase/firebase";
 export const addAccount = (plaidData: any) => (dispatch: any) => {
   const user = auth.currentUser
 
-    axios.post("/api/plaid/accounts/add", {plaidData, userId: user!.uid})
+    axios.post("https://wallet-watch-server.herokuapp.com/api/plaid/accounts/add", {plaidData, userId: user!.uid})
       .then(res =>
         dispatch({
           type: ADD_ACCOUNT,
@@ -38,7 +38,7 @@ export const addNewAccount = (plaidData: any): any =>{
   const user = auth.currentUser
 
   if (PUBLIC_TOKEN) {
-    axios.post("/api/plaid/accounts/add", {plaidData, userId: user!.uid})
+    axios.post("https://wallet-watch-server.herokuapp.com/api/plaid/accounts/add", {plaidData, userId: user!.uid})
       .then((resp: any) => {
         const ACCESS_TOKEN = resp.data.access_token;
         const ITEM_ID = resp.data.item_id;
