@@ -43,7 +43,7 @@ export const addNewAccount = (plaidData: any): any =>{
         const ACCESS_TOKEN = resp.data.access_token;
         const ITEM_ID = resp.data.item_id;
         // Check if account already exists for specific user
-        var docRef = firestore.collection('plaidAccounts').doc(user!.uid).collection("accounts").doc(plaidData.metadata.institution.itemId)
+        var docRef = firestore.collection('plaidAccounts').doc(user!.uid).collection("accounts").doc(ITEM_ID)
         return docRef.get().then(function(doc) {
           if (doc.exists) {
             console.log("Error: Duplicate dependent address ")
